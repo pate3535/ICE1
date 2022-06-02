@@ -1,9 +1,11 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+*MODIFIER : AAYUSHI PATEL
+*STUDENT ID NUMBER : 991653891
  */
 package cardtrickice1;
+
+import java.util.Random;
+import java.util.Scanner;
 
 /** step1 : generate 7 random cards and store in array - how
  * step 2: take any card input from user suit,number
@@ -18,16 +20,45 @@ public class CardTrickICE1 {
      */
     public static void main(String[] args) 
     {
-        Card[] magicHand = new Card[7]; //Array of object
-        for( int i=0;i<magicHand.length;i++)
-        {
-            Card c1 = new Card();
-            c1.setValue(2);//use a method to generate random *13
-            c1.setSuits("hearts");//random method suit 
-        }
-        //step 2:take input 
+         
+        Card[] magicHand = new Card[7];
+        Random select = new Random();
+        magicHand[i] = a;
+        a.setValue(select.nextInt());
+        a.setSuit(select.nextInt(4));
+       
         
-        //step 3: match with array 
-    }
+        
+        }
+     Card inputCard = new card();
+       Scanner sc = new Scanner(System.in);
+       System.out.println("Enter the suit of the card : ");
+       Suits = sc.next();
+       
+        for(int = 0; int<magicHand.lenght ; i++){
+        if (magicHand[i].getValue == inputCard.getValue() & magicHand[i].getSuit== inputcard.getSuit() )
+         
+         System.out.println("User card found in magic hand");
+            else
+           System.out.println("User card not found in magic hand");
+  }
+          Card luckyCard = new Card();
+           luckyCard.setValue(5);
+           luckyCard.setSuit(Card.SUITS[2]);
+  
+    for(int = 0; int<magicHand.lenght ; i++)
+	  if (magicHand[i].getValue == luckyCard.getValue() & magicHand[i].getSuit()==userCard.getSuit())
+  
+            System.out.println("Lucky card found in magic hand");
+            else
+            System.out.println("Lucky card not found in magic hand");
+  }
+  }
+          
+       
+       
+       
+       
+        
     
-}
+
